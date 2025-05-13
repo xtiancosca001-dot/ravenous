@@ -1,0 +1,26 @@
+npm create vite@latest
+indicate project
+react
+javascript
+then save
+
+> npx
+> create-vite
+
+│
+◇  Project name:
+│  my-react-app
+│
+◇  Select a framework:
+│  React
+│
+◇  Select a variant:
+│  JavaScript
+│
+◇  Scaffolding project in /Users/codecademy/Desktop/vite/my-react-app...
+│
+└  Done. Now run:
+
+ cd my-react-app
+ npm install
+ npm run dev
