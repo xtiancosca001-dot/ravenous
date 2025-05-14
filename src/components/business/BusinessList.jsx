@@ -1,6 +1,7 @@
 import React from 'react';
-import Business from './Business.jsx';
-import businesses from './Businesses.jsx';
+import Business from './Business';
+import businesses from './Businesses';
+import './business.css'
 
 function BusinessList() {
     return (

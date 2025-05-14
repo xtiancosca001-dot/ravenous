@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
 
-import Header from './components/Header'
-import SearchBar from './components/SearchBar';
-import BusinessList from './components/BusinessList';
+import Header from './components/header/Header'
+import SearchBar from './components/search-bar/SearchBar';
+import BusinessList from './components/business/BusinessList';
 
 
 function App() {
