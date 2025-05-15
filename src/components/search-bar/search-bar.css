@@ -1,0 +1,123 @@
+/* main container */
+.search-container {
+    background-image: url('../../assets/background_search_desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* parameters */
+.parameters {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* sort options */
+.sort {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0;
+}
+
+.sort ul {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+    width: 50%;
+}
+
+.sort ul li {
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    list-style-type:none;
+}
+
+.sort ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sort ul li a:hover {
+    transition: color 200ms linear;
+    color: #cdcfd4;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.search-bar .search-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.search-bar .search-bars input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 0 16px;
+    font-size: 1em;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    color: #000;
+}
+
+.search-bar button {
+    padding: 0.75em 2em;
+    margin: 0 16px;
+    font-size: 1em;
+    background-color: #cba352;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+}
+
+.search-bar button:hover {
+    transition: background-color 200ms linear;
+    background-color: #a6864c;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 560px) {
+    .search-container {
+        height: 300px;
+    }
+
+    .sort {
+        margin: 0.75em 0;
+    }
+
+    .sort ul {
+        width: 100%;
+    }
+
+    .sort ul li {
+        width: 50%;
+    }
+
+    .search-bar .search-bars {
+        display: block;
+        margin: 0;
+    }
+
+    .search-bar .search-bars input {
+        margin: 0 0 0.75em 0;
+    }
+}
