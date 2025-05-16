@@ -1,12 +1,35 @@
-# React + Vite
+Ravenous Project 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[x] Setup all files and components of this project (5/14/25 - 5/16/25)
+    [x] Header
+        [x] component 
+        [x] styling (regular) 
+        [x] styling (mobile)
+    [x] Search Bar
+        [x] component 
+        [x] styling (regular) 
+        [x] styling (mobile)
+    [x] Businesses
+        [x] component 
+        [x] styling (regular) 
+        [x] styling (mobile)
+    [x] Business List
+        [x] component 
+        [x] styling (regular) 
+        [x] styling (mobile) 
+        [x] seed files
+    [x] Application.js
+        [x] Import components 
+        [x] finalize main app component
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[] Add Props (5/16/25-5/16/25)
+    [x] App 
+        [x] Import businesses list 
+        [x] Pass businessList prop to BusinessList Component
+    [x] BusinessList
+        [x] Add Props for component 
+        [x] logic for iterating business item
+    [x] Business
+        [] Add Props for Business Component
+        [] Edit variables for props
+   

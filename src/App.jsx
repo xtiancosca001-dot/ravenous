@@ -6,16 +6,15 @@ import './App.css';
 import Header from './components/header/Header'
 import SearchBar from './components/search-bar/SearchBar';
 import BusinessList from './components/business/BusinessList';
+import businesses from './components/business/Businesses';
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className='main-container'>
       <Header />
       <SearchBar />
-      <BusinessList />
+      <BusinessList businessList={businesses} />
     </div>
   )
 }

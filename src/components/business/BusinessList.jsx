@@ -1,12 +1,11 @@
 import React from 'react';
 import Business from './Business';
-import businesses from './Businesses';
 import './business.css'
 
-function BusinessList() {
+function BusinessList(props) {
     return (
         <div className="business-list">
-            {businesses.map((business, idx)=><Business business={business} key={idx}/>)}
+            {props.businessList.map((business, idx)=><Business business={business} key={idx}/>)}
         </div>
     );
 }
