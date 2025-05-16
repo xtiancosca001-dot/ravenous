@@ -22,7 +22,7 @@ Ravenous Project
         [x] Import components 
         [x] finalize main app component
 
-[] Add Props (5/16/25-5/16/25)
+[x] Add Props (5/16/25-5/16/25)
     [x] App 
         [x] Import businesses list 
         [x] Pass businessList prop to BusinessList Component
@@ -30,6 +30,6 @@ Ravenous Project
         [x] Add Props for component 
         [x] logic for iterating business item
     [x] Business
-        [] Add Props for Business Component
-        [] Edit variables for props
+        [x] Add Props for Business Component
+        [x] Edit variables for props
    
