@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 
 import Header from './components/header/Header'
-import SearchBar from './components/search-bar/SearchBar';
+import SearchBarContainer from './components/search-bar/SearchBarContainer';
 import BusinessList from './components/business/BusinessList';
 import businesses from './components/business/Businesses';
 
@@ -13,7 +13,7 @@ function App() {
   return (
     <div className='main-container'>
       <Header />
-      <SearchBar />
+      <SearchBarContainer />
       <BusinessList businessList={businesses} />
     </div>
   )

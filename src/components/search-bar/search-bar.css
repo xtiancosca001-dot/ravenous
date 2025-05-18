@@ -26,7 +26,6 @@
 .sort ul {
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid #fff;
     width: 50%;
 }
 
@@ -36,6 +35,13 @@
     text-align: center;
     color: #fff;
     list-style-type:none;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+}
+
+.sort ul li.active {
+    color: #f4c979;
+    border-bottom: 1px solid #f4c979;
 }
 
 .sort ul li a {

@@ -18,7 +18,7 @@ function Business(props) {
                 </div>
                 <div className="review">
                     <p id="category">{props.business.category}</p>
-                    <p id="rating">{props.business.rating} stars</p>
+                    <p id="business-rating">{props.business.rating} stars</p>
                     <p>{props.business.reviewCount} reviews</p>
                 </div>
             </div>
