@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 
-function SearchBarContainer() {
+function SearchBarContainer({apiHandler}) {
     const [searchTerm, setSearchTerm] = useState('');
     const [location, setLocation] = useState('');
     const [sortBy, setSortBy] = useState('best_match');
@@ -12,8 +12,9 @@ function SearchBarContainer() {
 
     const handleSearchSubmit = (e) => {
         e.preventDefault();
-        if (searchTerm && location && sortBy) {
+        if (searchTerm || location || sortBy) {
             console.log(`Searching Yelp with ${searchTerm}, ${location}, ${sortBy}`);
+            apiHandler(searchTerm, location, sortBy);
         }
     };
 

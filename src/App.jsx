@@ -1,19 +1,23 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 
 import Header from './components/header/Header'
 import SearchBarContainer from './components/search-bar/SearchBarContainer';
 import BusinessList from './components/business/BusinessList';
-import businesses from './components/business/Businesses';
+// import businesses from './components/business/Businesses';
+import searchRestaurants from './utils/yelpAPI';  
 
 
 function App() {
+  const [businesses, setBusinesses] = useState([]);
+  // event handling
+  const onSearch = async (t,l,sb) => {
+    setBusinesses(await searchRestaurants(t,l,sb));
+  }
   return (
     <div className='main-container'>
       <Header />
-      <SearchBarContainer />
+      <SearchBarContainer apiHandler={onSearch} />
       <BusinessList businessList={businesses} />
     </div>
   )
